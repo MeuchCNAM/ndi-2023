@@ -10,8 +10,8 @@ export default function Home() {
         </div>
         <h2 className="text-xl font-bold mt-5">Explication</h2>
         <p className="text-gray-500">
-          Bienvenue dans notre Quizz sur le Climat ! L'objectif de ce quizz est
-          de tester vos connaissances sur le changement climatique et ses
+          Bienvenue dans notre Quizz sur le Climat ! L&apos;objectif de ce quizz
+          est de tester vos connaissances sur le changement climatique et ses
           solutions, tout en démystifiant certaines idées reçues. Nous voulons
           vous aider à distinguer entre les fausses informations et les vraies
           solutions pour le climat. Préparez-vous à plonger dans le monde du
