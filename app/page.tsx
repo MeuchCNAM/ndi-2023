@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Home() {
@@ -27,7 +28,9 @@ export default function Home() {
           négativement la santé de votre planète.
         </p>
         <div className="text-center mt-5">
-          <button className="btn btn-primary">Testez-vous</button>
+          <button className="btn btn-primary">
+            <Link href="quizz">Testez-vous</Link>
+          </button>
         </div>
       </section>
     </main>
