@@ -6,7 +6,6 @@ export default function Header() {
   return (
     <header className="navbar bg-white">
       <div className="flex-1">
-        <a className="btn btn-ghost text-xl">Meuch</a>
         <Image src={logo} alt="Meuch" width={100} height={100} />
       </div>
       <div className="flex-none">
