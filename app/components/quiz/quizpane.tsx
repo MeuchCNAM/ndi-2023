@@ -115,7 +115,7 @@ export const QuizPane: React.FC<{
               onClick={nextQuestion}
               ref={nextQuestionRef}
             >
-              Question suivante
+              {next}
             </button>
           </div>
         </div>
