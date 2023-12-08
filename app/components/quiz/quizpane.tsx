@@ -4,14 +4,22 @@ import { useRef, useState } from "react";
 import questions from "../../../public/quizData.json";
 import ProgressBar from "@/app/components/progressbar";
 
-export default function QuizPane() {
+export const QuizPane: React.FC<{
+  questions: {
+    question: string;
+    answers: string[];
+    correctAnswerIndex: number;
+    information: string;
+  }[];
+  title: string;
+  next: string;
+}> = ({ questions, title, next }) => {
   const [isQuestionAnswered, setIsQuestionAnswered] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(0);
   const [choice, setChoice] = useState(-1);
   const [progress, setProgress] = useState(0);
   const firstAnswerRef = useRef<HTMLButtonElement>(null);
   const nextQuestionRef = useRef<HTMLButtonElement>(null);
-
 
   const nextQuestion = () => {
     setIsQuestionAnswered(false);
@@ -54,7 +62,7 @@ export default function QuizPane() {
 
   return (
     <main className="flex flex-col items-center mt-20 min-h-[65vh]">
-      <h1 className="text-4xl font-bold text-center mb-5">Le Meuch Quiz</h1>
+      <h1 className="text-4xl font-bold text-center mb-5">{title}</h1>
       <ProgressBar value={progress} />
 
       <section
@@ -63,17 +71,22 @@ export default function QuizPane() {
         }`}
       >
         <div className="collapse-title text-xl font-medium p-8">
-          <h2 className="text-2xl font-bold text-center mb-6">{questions[questionNumber]?.question}</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">
+            {questions[questionNumber]?.question}
+          </h2>
           <div className="answers grid grid-cols-2 gap-4 gap-x-4">
-            {questions[questionNumber]?.answers.map((option: string, index: number) => (
-              <button
-                key={index}
-                className={`btn btn-primary ${getAnswerClass(index)}`}
-                onClick={handleChoice.bind(null, index)}
-                ref={index === 0 ? firstAnswerRef : null}>
-                {option}
-              </button>
-            ))}
+            {questions[questionNumber]?.answers.map(
+              (option: string, index: number) => (
+                <button
+                  key={index}
+                  className={`btn btn-primary ${getAnswerClass(index)}`}
+                  onClick={handleChoice.bind(null, index)}
+                  ref={index === 0 ? firstAnswerRef : null}
+                >
+                  {option}
+                </button>
+              )
+            )}
           </div>
         </div>
         <div className="collapse-content text-center p-0">
@@ -97,10 +110,18 @@ export default function QuizPane() {
             <p className="text-sm text-gray-700">
               {questions[questionNumber].information}
             </p>
-            <button className="btn btn-sm btn-primary" onClick={nextQuestion} ref={nextQuestionRef}>Question suivante</button>
+            <button
+              className="btn btn-sm btn-primary"
+              onClick={nextQuestion}
+              ref={nextQuestionRef}
+            >
+              Question suivante
+            </button>
           </div>
         </div>
       </section>
     </main>
   );
-}
+};
+
+export default QuizPane;
