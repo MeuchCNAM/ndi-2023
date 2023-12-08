@@ -10,20 +10,20 @@ const ProgressBar: FC<ProgressBarProps> = ({ value = 0 }) => {
 
   const getProgressColor = (value: number) => {
     if (value < 33) {
-      return "success";
+      return "progress-success";
     }
 
     if (value < 66) {
-      return "warning";
+      return "progress-warning";
     }
 
-    return "error";
+    return "progress-error";
   };
 
   return (
     <>
       <progress
-        className={`progress progress-${getProgressColor(value)} w-56`}
+        className={`progress ${getProgressColor(value)} w-56`}
         value={value}
         max="100"
       ></progress>
