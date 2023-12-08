@@ -16,9 +16,15 @@ export const metadata: Metadata = {
   description: "Meuch - NDI 2023",
 };
 
-export default function LocaleLayout({ children, params: { locale } }) {
+export default function LocaleLayout({
+  children,
+  params: { locale },
+}: {
+  children: React.ReactNode;
+  params: { locale: string };
+}) {
   // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+  if (!locales.includes(locale)) notFound();
 
   return (
     <html lang={locale}>
