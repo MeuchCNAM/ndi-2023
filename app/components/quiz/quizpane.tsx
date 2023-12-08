@@ -21,7 +21,6 @@ export const QuizPane: React.FC<{
   const firstAnswerRef = useRef<HTMLButtonElement>(null);
   const nextQuestionRef = useRef<HTMLButtonElement>(null);
 
-
   const nextQuestion = () => {
     setIsQuestionAnswered(false);
     setChoice(-1);
@@ -65,24 +64,29 @@ export const QuizPane: React.FC<{
     <main className="flex flex-col items-center mt-20 min-h-[65vh]">
       <h1 className="text-4xl font-bold text-center mb-5">{title}</h1>
       <ProgressBar value={progress} />
-      
+
       <section
         className={`bg-white border border-gray-300 shadow-md rounded-xl w-2/3 collapse ${
           isQuestionAnswered && "collapse-open"
         }`}
       >
         <div className="collapse-title text-xl font-medium p-8">
-          <h2 className="text-2xl font-bold text-center mb-6">{questions[questionNumber]?.question}</h2>
+          <h2 className="text-2xl font-bold text-center mb-6">
+            {questions[questionNumber]?.question}
+          </h2>
           <div className="answers grid grid-cols-2 gap-4 gap-x-4">
-            {questions[questionNumber]?.answers.map((option: string, index: number) => (
-              <button
-                key={index}
-                className={`btn btn-primary ${getAnswerClass(index)}`}
-                onClick={handleChoice.bind(null, index)}
-                ref={index === 0 ? firstAnswerRef : null}>
-                {option}
-              </button>
-            ))}
+            {questions[questionNumber]?.answers.map(
+              (option: string, index: number) => (
+                <button
+                  key={index}
+                  className={`btn btn-primary ${getAnswerClass(index)}`}
+                  onClick={handleChoice.bind(null, index)}
+                  ref={index === 0 ? firstAnswerRef : null}
+                >
+                  {option}
+                </button>
+              )
+            )}
           </div>
         </div>
         <div className="collapse-content text-center p-0">
@@ -106,10 +110,18 @@ export const QuizPane: React.FC<{
             <p className="text-sm text-gray-700">
               {questions[questionNumber].information}
             </p>
-            <button className="btn btn-sm btn-primary" onClick={nextQuestion} ref={nextQuestionRef}>Question suivante</button>
+            <button
+              className="btn btn-sm btn-primary"
+              onClick={nextQuestion}
+              ref={nextQuestionRef}
+            >
+              Question suivante
+            </button>
           </div>
         </div>
       </section>
     </main>
   );
 };
+
+export default QuizPane;
