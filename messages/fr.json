@@ -21,7 +21,11 @@
     "title": "À propos de nous",
     "text": "Bienvenue dans la Meuch! Nous sommes une équipe dynamique de Meucheurs passionnés. Ensemble, nous formons une Meuch soudée, travaillant ardemment pour propager la Meuchitude et atteindre nos objectifs communs. Rejoignez-nous dans notre aventure Meuchesque!"
   },
-  "Quiz" : [
+  "Quiz": {
+    "title": "Le Meuch Quiz",
+    "next": "Question suivante"
+  },
+  "Game" : [
     {
        "id":1,
        "question":"Quelle serait la température de la Terre sans atmosphère ?",
@@ -141,7 +145,79 @@
        ],
        "correctAnswerIndex":0,
        "information":"Mais sens toi libre de suivre les autres suggestions, ça ne peut pas faire de mal..."
-    }
+    },
+    {
+        "id": 11,
+        "question": "Les géologues débattent sur l’apparition d’une nouvelle ère géologique marquée par l’influence de l’Homme sur la planète, en particulier à travers l’utilisation des énergies fossiles. Elle se nomme :",
+        "answers": [
+          "Carbonocène",
+          "Industriacène",
+          "Anthropocène",
+          "Mésoprotérozoïque"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "Intéressant!"
+      },
+      {
+        "id": 12,
+        "question": "Au rythme de consommation actuel au niveau mondial, 3 milliards de baril de pétrole sont consommés en :",
+        "answers": [
+          "Un jour",
+          "Une semaine",
+          "Un mois",
+          "Un an"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "C'est beaucoup non?"
+      },
+      {
+        "id": 13,
+        "question": "Combien l'américain moyen rejette de CO2 dans l'atmosphère par an ?",
+        "answers": [
+          "Une demi tonne",
+          "2 tonnes",
+          "20 tonnes",
+          "Une méga tonne"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "A titre de comparaison en moyenne, un Francais émet environ 6,9 tonnes de CO2 dans l'atmosphère par an"
+      },
+      {
+        "id": 14,
+        "question": "Dans ses prévisions de réchauffement, le GIEC a du mal à estimer les effets d’un phénomène par manque de connaissances scientifiques. Il s’agit :",
+        "answers": [
+          "De l’accroissement mondial de population",
+          "Des éruptions solaires",
+          "De la fonte du permafrost",
+          "De la prochaine coupe de Donald Trump"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "Il est beaucoup plus simple d'estimer l'esthétique de la prochaine coupe de Donald"
+      },
+      {
+        "id": 15,
+        "question": "Le pire scénario du GIEC prévoit d’ici 2100 une augmentation de :",
+        "answers": [
+          "2°C",
+          "5°C",
+          "8°C",
+          "12°C"
+        ],
+        "correctAnswerIndex": 3,
+        "information": "La Terre serait difficilement vivable...mais ça reste le pire scénario dans lequel nous nous accordons à vraiment faire n'importe quoi !"
+      },
+      {
+        "id": 16,
+        "question": "Où auront lieu les premiers impacts majeurs du changement climatique ?",
+        "answers": [
+          "Sur les tropiques",
+          "Sur les latitudes nord",
+          "Sur l'équateur",
+          "La distribution est égale"
+        ],
+        "correctAnswerIndex": 1,
+        "information": "Les modèles du GIEC s’accordent à montrer que les augmentations moyennes de T° vont être nettement plus importantes dans les hautes latitudes de l’hémisphère Nord."
+      }
  ]
 }
 

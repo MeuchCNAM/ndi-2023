@@ -21,127 +21,203 @@
     "title": "About us",
     "text": "Welcome to The Meuch! We're a dynamic team of passionate Meuchers. Together, we form a tight-knit Meuch, working hard to spread Meuchitude and achieve our common goals. Join us in our Meuch adventure!"
   },
-  "Quiz": [
-    {
-        "id": 1,
-        "question": "What would be the temperature of the Earth without an atmosphere?",
-        "answers": [
-            "+15°C",
-            "0°C",
-            "-50°C",
-            "-18°C"
-        ],
-        "correctAnswerIndex": 3,
-        "information": "Fortunately, the natural phenomenon of the greenhouse effect retains some of the sun's heat in the atmosphere!"
-    },
-    {
-        "id": 2,
-        "question": "Which gas has the most powerful greenhouse effect?",
-        "answers": [
-            "CO2",
-            "Water vapor",
-            "Methane",
-            "Argon"
-        ],
-        "correctAnswerIndex": 1,
-        "information": "Water vapor contributes 60% to the greenhouse effect. However, human emissions of this gas through industry have limited effects as the lifespan of water vapor is short."
-    },
-    {
-        "id": 3,
-        "question": "In winter and in equal quantity, which of these foods emits the most CO2?",
-        "answers": [
-            "Martinique banana",
-            "Spanish tomatoes",
-            "Picard rutabaga",
-            "Colombian coffee"
-        ],
-        "correctAnswerIndex": 1,
-        "information": "In equal quantity, producing a tomato in winter generates more CO2 today than transporting other foods..."
-    },
-    {
-        "id": 4,
-        "question": "Which country has the highest greenhouse gas emissions per capita?",
-        "answers": [
-            "The United States",
-            "Australia",
-            "Norway",
-            "Japan"
-        ],
-        "correctAnswerIndex": 1,
-        "information": "Surprising!"
-    },
-    {
-        "id": 5,
-        "question": "The production of energy is our main source of CO2 emissions. What is the second?",
-        "answers": [
-            "Deforestation",
-            "Volcanic activity",
-            "Cow flatulence",
-            "Burning Man"
-        ],
-        "correctAnswerIndex": 0,
-        "information": "It is deforestation, which accounts for about 15% of our emissions today."
-    },
-    {
-        "id": 6,
-        "question": "In terms of transportation, which action would have the most impact?",
-        "answers": [
-            "Launch a major plan to promote bike taxis",
-            "Improve the efficiency of airplanes",
-            "Build a global network of high-speed trains",
-            "Develop telecommuting"
-        ],
-        "correctAnswerIndex": 1,
-        "information": "Air transport remains one of the major sources of the increase in our carbon footprint, according to the project."
-    },
-    {
-        "id": 7,
-        "question": "If all the energy I consumed was of human origin, how many humans would I need in my service?",
-        "answers": [
-            "2",
-            "20",
-            "200",
-            "2000"
-        ],
-        "correctAnswerIndex": 2,
-        "information": "This is the argument taken up by many advocates of degrowth!"
-    },
-    {
-        "id": 8,
-        "question": "In terms of food, which solution is the most effective?",
-        "answers": [
-            "Eat less meat",
-            "Install 'clean' cooking stoves in developing countries",
-            "Implement a more efficient and sustainable rice cultivation",
-            "Stop eating red tuna"
-        ],
-        "correctAnswerIndex": 0,
-        "information": "Eating less meat would be the most effective solution according to scientists from the project."
-    },
-    {
-        "id": 9,
-        "question": "Which action would reduce our greenhouse gas emissions the most?",
-        "answers": [
-            "Grow our vegetables",
-            "Stop deforestation",
-            "Remove gasoline vehicles",
-            "Close carbon-emitting power plants"
-        ],
-        "correctAnswerIndex": 3,
-        "information": "To be taken on a global scale (obviously 😀)"
-    },
-    {
-        "id": 10,
-        "question": "Which action would allow me to reduce my carbon footprint the most?",
-        "answers": [
-            "Lower the heating setpoint by 1°C",
-            "Postpone the purchase of a new smartphone by a year",
-            "Consume one meatless meal per week",
-            "Turn off lights when leaving a room"
-        ],
-        "correctAnswerIndex": 0,
-        "information": "But feel free to follow the other suggestions, it can't hurt..."
-    }
+  "Quiz": {
+    "title": "The Meuch Quiz",
+    "next": "Next question"
+  },
+  "Game": [
+   {
+      "id":1,
+      "question":"What would be the temperature of the Earth without an atmosphere?",
+      "answers":[
+         "+15°C",
+         "0°C",
+         "-50°C",
+         "-18°C"
+      ],
+      "correctAnswerIndex":3,
+      "information":"Fortunately, the natural phenomenon of the greenhouse effect retains some of the sun's heat in the atmosphere!"
+   },
+   {
+      "id":2,
+      "question":"Which gas has the most powerful greenhouse effect?",
+      "answers":[
+         "CO2",
+         "Water vapor",
+         "Methane",
+         "Argon"
+      ],
+      "correctAnswerIndex":1,
+      "information":"Water vapor contributes 60% to the greenhouse effect. However, human emissions of this gas through industry have limited effects as the lifespan of water vapor is short."
+   },
+   {
+      "id":3,
+      "question":"In winter and in equal quantity, which of these foods emits the most CO2?",
+      "answers":[
+         "Martinique banana",
+         "Spanish tomatoes",
+         "Picard rutabaga",
+         "Colombian coffee"
+      ],
+      "correctAnswerIndex":1,
+      "information":"In equal quantity, producing a tomato in winter generates more CO2 today than transporting other foods..."
+   },
+   {
+      "id":4,
+      "question":"Which country has the highest greenhouse gas emissions per capita?",
+      "answers":[
+         "The United States",
+         "Australia",
+         "Norway",
+         "Japan"
+      ],
+      "correctAnswerIndex":1,
+      "information":"Surprising!"
+   },
+   {
+      "id":5,
+      "question":"The production of energy is our main source of CO2 emissions. What is the second?",
+      "answers":[
+         "Deforestation",
+         "Volcanic activity",
+         "Cow flatulence",
+         "Burning Man"
+      ],
+      "correctAnswerIndex":0,
+      "information":"It is deforestation, which accounts for about 15% of our emissions today."
+   },
+   {
+      "id":6,
+      "question":"In terms of transportation, which action would have the most impact?",
+      "answers":[
+         "Launch a major plan to promote bike taxis",
+         "Improve the efficiency of airplanes",
+         "Build a global network of high-speed trains",
+         "Develop telecommuting"
+      ],
+      "correctAnswerIndex":1,
+      "information":"Air transport remains one of the major sources of the increase in our carbon footprint, according to the project."
+   },
+   {
+      "id":7,
+      "question":"If all the energy I consumed was of human origin, how many humans would I need in my service?",
+      "answers":[
+         "2",
+         "20",
+         "200",
+         "2000"
+      ],
+      "correctAnswerIndex":2,
+      "information":"This is the argument taken up by many advocates of degrowth!"
+   },
+   {
+      "id":8,
+      "question":"In terms of food, which solution is the most effective?",
+      "answers":[
+         "Eat less meat",
+         "Install 'clean' cooking stoves in developing countries",
+         "Implement a more efficient and sustainable rice cultivation",
+         "Stop eating red tuna"
+      ],
+      "correctAnswerIndex":0,
+      "information":"Eating less meat would be the most effective solution according to scientists from the project."
+   },
+   {
+      "id":9,
+      "question":"Which action would reduce our greenhouse gas emissions the most?",
+      "answers":[
+         "Grow our vegetables",
+         "Stop deforestation",
+         "Remove gasoline vehicles",
+         "Close carbon-emitting power plants"
+      ],
+      "correctAnswerIndex":3,
+      "information":"To be taken on a global scale (obviously 😀)"
+   },
+   {
+      "id":10,
+      "question":"Which action would allow me to reduce my carbon footprint the most?",
+      "answers":[
+         "Lower the heating setpoint by 1°C",
+         "Postpone the purchase of a new smartphone by a year",
+         "Consume one meatless meal per week",
+         "Turn off lights when leaving a room"
+      ],
+      "correctAnswerIndex":0,
+      "information":"But feel free to follow the other suggestions, it can't hurt..."
+   },
+   {
+      "id":11,
+      "question":"Geologists debate the emergence of a new geological era marked by human influence on the planet, especially through the use of fossil fuels. It is called:",
+      "answers":[
+         "Carbonocene",
+         "Industriocene",
+         "Anthropocene",
+         "Mesoproterozoic"
+      ],
+      "correctAnswerIndex":2,
+      "information":"Interesting!"
+   },
+   {
+      "id":12,
+      "question":"At the current rate of consumption worldwide, 3 billion barrels of oil are consumed in:",
+      "answers":[
+         "One day",
+         "One week",
+         "One month",
+         "One year"
+      ],
+      "correctAnswerIndex":2,
+      "information":"That's a lot, isn't it?"
+   },
+   {
+      "id":13,
+      "question":"How much CO2 does the average American emit into the atmosphere annually?",
+      "answers":[
+         "Half a tonne",
+         "2 tonnes",
+         "20 tonnes",
+         "A megaton"
+      ],
+      "correctAnswerIndex":2,
+      "information":"For comparison, on average, a French person emits about 6.9 tonnes of CO2 into the atmosphere annually."
+   },
+   {
+      "id":14,
+      "question":"In its warming forecasts, the IPCC struggles to estimate the effects of a phenomenon due to a lack of scientific knowledge. It is about:",
+      "answers":[
+         "Global population growth",
+         "Solar eruptions",
+         "Permafrost melting",
+         "Donald Trump's next haircut"
+      ],
+      "correctAnswerIndex":2,
+      "information":"It is much simpler to estimate the aesthetics of Donald Trump's next haircut."
+   },
+   {
+      "id":15,
+      "question":"The worst-case scenario of the IPCC predicts an increase of:",
+      "answers":[
+         "2°C",
+         "5°C",
+         "8°C",
+         "12°C"
+      ],
+      "correctAnswerIndex":3,
+      "information":"The Earth would be hardly livable, but it remains the worst-case scenario in which we agree to truly mess things up!"
+   },
+   {
+      "id":16,
+      "question":"Where will the first major impacts of climate change occur?",
+      "answers":[
+         "In the tropics",
+         "In the northern latitudes",
+         "At the equator",
+         "The distribution is equal"
+      ],
+      "correctAnswerIndex":1,
+      "information":"The IPCC models agree in showing that the average temperature increases will be significantly more important in the high latitudes of the Northern Hemisphere."
+   }
 ]
 }
 
