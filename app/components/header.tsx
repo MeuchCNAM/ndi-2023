@@ -9,12 +9,12 @@ export default function Header() {
   const navbarTrad = useTranslations("Navbar");
 
   return (
-    <header className="navbar bg-white">
+    <header className="navbar bg-slate-100 shadow-md">
       <div className="flex-1">
-        <Image src={logo} alt="Meuch" width={100} height={100} />
+        <Image src={logo} alt="Meuch" width={70} height={70} />
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1 text-black text-3xl">
+        <ul className="menu menu-horizontal px-1 text-black text-sm rounded-box">
           <li>
             <Link href={`/${language}/`}>{navbarTrad("home")}</Link>
           </li>
@@ -26,8 +26,8 @@ export default function Header() {
           </li>
           <li>
             <details>
-              <summary className="text-3xl">{navbarTrad("language")}</summary>
-              <ul className="menu menu-vertical px-1 text-black text-3xl bg-white">
+              <summary>{navbarTrad("language")}</summary>
+              <ul className="menu menu-vertical px-1 text-black bg-white">
                 <li>
                   <Link href={`/de/`}>DE</Link>
                 </li>
