@@ -1,9 +1,10 @@
+import QuizPane from "@/app/components/quiz/quizpane";
 import React from "react";
 
 export default function Quiz() {
   return (
     <main>
-      <h1>Quiz</h1>
+      <QuizPane />
     </main>
   );
 }
