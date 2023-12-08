@@ -4,6 +4,11 @@ import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
+import { notFound } from "next/navigation";
+
+// Can be imported from a shared config
+const locales = ["en", "de", "fr"];
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -11,13 +16,12 @@ export const metadata: Metadata = {
   description: "Meuch - NDI 2023",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function LocaleLayout({ children, params: { locale } }) {
+  // Validate that the incoming `locale` parameter is valid
+  if (!locales.includes(locale as any)) notFound();
+
   return (
-    <html lang="en">
+    <html lang={locale}>
       <body className={`${inter.className} min-h-screen flex flex-col`}>
         <Header />
         {children}

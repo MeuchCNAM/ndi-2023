@@ -1,7 +1,11 @@
 import Link from "next/link";
 import React from "react";
 
+import { useTranslations } from "next-intl";
+
 export default function Home() {
+  const trad = useTranslations("Index");
+
   return (
     <main className="min-h-screen flex items-center justify-center">
       <section className="bg-white p-8 border border-gray-300 shadow-md rounded-xl w-2/3">
