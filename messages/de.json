@@ -20,6 +20,128 @@
   "About": {
     "title": "Über uns",
     "text": "Willkommen in der Meuch! Wir sind ein dynamisches Team von leidenschaftlichen Meuchlern. Zusammen sind wir ein eingeschworener Meuch, der eifrig daran arbeitet, das Meucheln zu verbreiten und unsere gemeinsamen Ziele zu erreichen. Begleiten Sie uns auf unserem Meucheln-Abenteuer!"
-  }
+  },
+  "Quiz": [
+    {
+        "id": 1,
+        "question": "Wie hoch wäre die Temperatur der Erde ohne Atmosphäre?",
+        "answers": [
+            "+15°C",
+            "0°C",
+            "-50°C",
+            "-18°C"
+        ],
+        "correctAnswerIndex": 3,
+        "information": "Glücklicherweise bewahrt das natürliche Phänomen des Treibhauseffekts einen Teil der Sonnenwärme in der Atmosphäre auf!"
+    },
+    {
+        "id": 2,
+        "question": "Welches Gas hat den stärksten Treibhauseffekt?",
+        "answers": [
+            "CO2",
+            "Wasserdampf",
+            "Methan",
+            "Argon"
+        ],
+        "correctAnswerIndex": 1,
+        "information": "Wasserdampf trägt zu 60 % zum Treibhauseffekt bei. Die Emissionen dieses Gases durch die menschliche Industrie haben jedoch begrenzte Auswirkungen, da die Lebensdauer von Wasserdampf kurz ist."
+    },
+    {
+        "id": 3,
+        "question": "Im Winter und in gleicher Menge: Welches dieser Lebensmittel emittiert am meisten CO2?",
+        "answers": [
+            "Martinique-Banane",
+            "Spanische Tomaten",
+            "Picard-Rübe",
+            "Kolumbianischer Kaffee"
+        ],
+        "correctAnswerIndex": 1,
+        "information": "In gleicher Menge erzeugt die Produktion einer Tomate im Winter heute mehr CO2 als der Transport anderer Lebensmittel..."
+    },
+    {
+        "id": 4,
+        "question": "Welches Land hat die höchsten Treibhausgasemissionen pro Kopf?",
+        "answers": [
+            "Die Vereinigten Staaten",
+            "Australien",
+            "Norwegen",
+            "Japan"
+        ],
+        "correctAnswerIndex": 1,
+        "information": "Überraschend!"
+    },
+    {
+        "id": 5,
+        "question": "Die Energieproduktion ist unsere Hauptquelle für CO2-Emissionen. Was ist die zweite Quelle?",
+        "answers": [
+            "Abholzung",
+            "Vulkanische Aktivität",
+            "Flatulenzen von Kühen",
+            "Burning Man"
+        ],
+        "correctAnswerIndex": 0,
+        "information": "Es handelt sich um die Abholzung, die heute etwa 15 % unserer Emissionen ausmacht."
+    },
+    {
+        "id": 6,
+        "question": "Im Bereich Transport: Welche Maßnahme hätte den größten Einfluss?",
+        "answers": [
+            "Ein umfassendes Programm zur Förderung von Fahrrad-Taxis starten",
+            "Die Effizienz von Flugzeugen verbessern",
+            "Ein globales Netzwerk von Hochgeschwindigkeitszügen aufbauen",
+            "Die Telearbeit ausbauen"
+        ],
+        "correctAnswerIndex": 1,
+        "information": "Der Luftverkehr bleibt eine der Hauptursachen für die Zunahme unseres CO2-Fußabdrucks, laut dem Projekt."
+    },
+    {
+        "id": 7,
+        "question": "Wenn alle Energie, die ich verbrauche, menschlichen Ursprungs wäre, wie viele Menschen bräuchte ich in meinem Dienst?",
+        "answers": [
+            "2",
+            "20",
+            "200",
+            "2000"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "Dies ist das Argument vieler Verfechter der Degrowth-Bewegung!"
+    },
+    {
+        "id": 8,
+        "question": "Im Bereich Ernährung: Welche Lösung ist am effektivsten?",
+        "answers": [
+            "Weniger Fleisch essen",
+            "In Entwicklungsländern 'saubere' Kochherde installieren",
+            "Eine effizientere und nachhaltigere Reiskultivierung umsetzen",
+            "Aufhören, roten Thunfisch zu essen"
+        ],
+        "correctAnswerIndex": 0,
+        "information": "Weniger Fleisch zu essen wäre laut Wissenschaftlern des Projekts die effektivste Lösung."
+    },
+    {
+        "id": 9,
+        "question": "Welche Maßnahme würde die Treibhausgasemissionen am meisten reduzieren?",
+        "answers": [
+            "Eigenes Gemüse anbauen",
+            "Abholzung stoppen",
+            "Benzinfahrzeuge abschaffen",
+            "Kohlenstoffemittierende Kraftwerke schließen"
+        ],
+        "correctAnswerIndex": 3,
+        "information": "Informationen: Auf globaler Ebene zu betrachten (natürlich 😀)"
+    },
+    {
+        "id": 10,
+        "question": "Welche Maßnahme würde mir am meisten helfen, meinen ökologischen Fußabdruck zu reduzieren?",
+        "answers": [
+            "Die Heizung um 1°C herunterstellen",
+            "Den Kauf eines neuen Smartphones um ein Jahr verschieben",
+            "Einmal pro Woche eine fleischlose Mahlzeit konsumieren",
+            "Beim Verlassen eines Raumes das Licht ausschalten"
+        ],
+        "correctAnswerIndex": 0,
+        "information": "Aber fühlen Sie sich frei, den anderen Vorschlägen zu folgen. Es kann nicht schaden..."
+    }
+]
 }
 
