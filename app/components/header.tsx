@@ -1,5 +1,5 @@
 import Image from "next/image";
-import logo from "../../../public/meuch_logo.svg";
+import logo from "../../public/meuch_logo.svg";
 import Link from "next/link";
 import { useTranslations } from "next-intl";
 
