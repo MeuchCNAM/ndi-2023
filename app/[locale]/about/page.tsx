@@ -1,11 +1,12 @@
 import { useTranslations } from "next-intl";
 import React from "react";
+import Image from "next/image";
 
 const teamMembers = [
-  { id: 1, name: "Fabre Bastian", photo: "../bastian.png" },
-  { id: 2, name: "Mosa Samy", photo: "../samy.png" },
-  { id: 3, name: "Feucht Joe", photo: "../joe.png" },
-  { id: 4, name: "Duvernay Benoit", photo: "../benoit.png" },
+  { id: 1, name: "Fabre Bastian", photo: "/../bastian.png" },
+  { id: 2, name: "Mosa Samy", photo: "/../samy.png" },
+  { id: 3, name: "Feucht Joe", photo: "/../joe.png" },
+  { id: 4, name: "Duvernay Benoit", photo: "/../benoit.png" },
 ];
 
 const About = () => {
@@ -17,10 +18,12 @@ const About = () => {
       <div className="flex justify-around items-center mb-8">
         {teamMembers.map((member) => (
           <div key={member.id} className="text-center">
-            <img
+            <Image
               src={member.photo}
               alt={member.name}
-              className="rounded-full w-128 h-96 mb-4"
+              width={128}
+              height={96}
+              className="rounded-full mb-4"
             />
             <p className="text-3xl font-bold mb-4">{member.name}</p>
           </div>
