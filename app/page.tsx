@@ -6,11 +6,11 @@ export default function Home() {
     <main className="min-h-screen flex items-center justify-center">
       <section className="bg-white p-8 border border-gray-300 shadow-md rounded-xl w-2/3">
         <div className="">
-          <h1 className="text-2xl font-bold text-center">Le Meuch Quizz</h1>
+          <h1 className="text-2xl font-bold text-center">Le Meuch Quiz</h1>
         </div>
         <h2 className="text-xl font-bold mt-5">Explication</h2>
         <p className="text-gray-500">
-          Bienvenue dans notre Quizz sur le Climat ! L&apos;objectif de ce quizz
+          Bienvenue dans notre Quiz sur le Climat ! L&apos;objectif de ce quiz
           est de tester vos connaissances sur le changement climatique et ses
           solutions, tout en démystifiant certaines idées reçues. Nous voulons
           vous aider à distinguer entre les fausses informations et les vraies
@@ -23,13 +23,13 @@ export default function Home() {
         <p className="text-gray-500">
           Plusieurs questions vous seront posées, successivement. Vous devrez y
           répondre en choisissant la réponse qui vous semble la plus appropriée.
-          A la fin du quizz, vous pourrez voir vos résultats. Attention ! Vos
+          A la fin du quiz, vous pourrez voir vos résultats. Attention ! Vos
           choix ont des conséquences et influenceront positivement ou
           négativement la santé de votre planète.
         </p>
         <div className="text-center mt-5">
           <button className="btn btn-primary">
-            <Link href="quizz">Testez-vous</Link>
+            <Link href="quiz">Testez-vous</Link>
           </button>
         </div>
       </section>

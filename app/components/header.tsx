@@ -14,7 +14,7 @@ export default function Header() {
             <Link href="/">Accueil</Link>
           </li>
           <li>
-            <Link href="/quizz">Quizz</Link>
+            <Link href="/quiz">Quiz</Link>
           </li>
           <li>
             <Link href="/about">À propos</Link>
