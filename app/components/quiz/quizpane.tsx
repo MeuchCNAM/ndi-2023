@@ -1,7 +1,7 @@
 "use client";
 
 import { useRef, useState } from "react";
-import questions from "../../../public/quizData.json";
+import Image from "next/image";
 import ProgressBar from "@/app/components/progressbar";
 
 export const QuizPane: React.FC<{
@@ -18,6 +18,8 @@ export const QuizPane: React.FC<{
   const [questionNumber, setQuestionNumber] = useState(0);
   const [choice, setChoice] = useState(-1);
   const [progress, setProgress] = useState(0);
+  const [score, setScore] = useState(0);
+  const [isQuizFinished, setIsQuizFinished] = useState(false);
   const firstAnswerRef = useRef<HTMLButtonElement>(null);
   const nextQuestionRef = useRef<HTMLButtonElement>(null);
 
@@ -26,6 +28,9 @@ export const QuizPane: React.FC<{
     setChoice(-1);
     setQuestionNumber((questionNumber + 1) % questions.length);
     firstAnswerRef.current?.focus();
+    if (progress >= 100 || score >= questions.length) {
+      setIsQuizFinished(true);
+    }
   };
 
   const getAnswerClass = (index: number) => {
@@ -51,6 +56,8 @@ export const QuizPane: React.FC<{
 
     if (!(choice === questions[questionNumber]?.correctAnswerIndex)) {
       setProgress(progress + 15);
+    } else {
+      setScore(score + 1);
     }
 
     setIsQuestionAnswered(true);
@@ -72,8 +79,10 @@ export const QuizPane: React.FC<{
       >
         <div className="collapse-title text-xl font-medium p-8">
           <h2 className="text-2xl font-bold text-center mb-6">
-            {questions[questionNumber]?.question}
+            {isQuizFinished ? `Score: ${score}/${questions.length}` :
+              questions[questionNumber]?.question}
           </h2>
+          {!isQuizFinished && (
           <div className="answers grid grid-cols-2 gap-4 gap-x-4">
             {questions[questionNumber]?.answers.map(
               (option: string, index: number) => (
@@ -88,7 +97,21 @@ export const QuizPane: React.FC<{
               )
             )}
           </div>
+          )}
+          {isQuizFinished && (
+            <div className="flex flex-col items-center">
+              {score === questions.length && (
+                <Image src="/greta-happy.gif" alt="Greta Thunberg Happy" width={500} height={500} />
+              )}
+
+              {score < questions.length && (
+                <Image src="/greta-how-dare-you.gif" alt="Greta Thunberg Angry" width={500} height={500} />
+              )}
+            </div>
+          )}
         </div>
+
+        {!isQuizFinished && (
         <div className="collapse-content text-center p-0">
           <div
             role="alert"
@@ -119,6 +142,7 @@ export const QuizPane: React.FC<{
             </button>
           </div>
         </div>
+        )}
       </section>
     </main>
   );
