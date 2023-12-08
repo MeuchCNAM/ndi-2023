@@ -2,6 +2,222 @@
   "Index": {
     "title": "Bonjour tout le monde !",
     "language": "fr"
-  }
+  },
+  "Navbar": {
+    "home": "Accueil",
+    "quiz": "Quiz",
+    "about": "À propos",
+    "language": "Langue"
+  },
+  "Home": {
+    "quiz": "Le Meuch Quiz",
+    "title_1": "Explication",
+    "title_2": "Déroulement",
+    "text_1": "Bienvenue dans notre Quiz sur le Climat ! L'objectif de ce quiz est de tester vos connaissances sur le changement climatique et ses solutions, tout en démystifiant certaines idées reçues. Nous voulons vous aider à distinguer entre les fausses informations et les vraies solutions pour le climat. Préparez-vous à plonger dans le monde du climat avec des questions instructives et engageantes. Chaque question abordera un aspect spécifique du changement climatique, des émissions de gaz à effet de serre aux solutions durables.",
+    "text_2": "Plusieurs questions vous seront posées, successivement. Vous devrez y répondre en choisissant la réponse qui vous semble la plus appropriée. À la fin du quiz, vous pourrez voir vos résultats. Attention ! Vos choix ont des conséquences et influenceront positivement ou négativement la santé de votre planète.",
+    "button": "Testez-vous"
+  },
+  "About": {
+    "title": "À propos de nous",
+    "text": "Bienvenue dans la Meuch! Nous sommes une équipe dynamique de Meucheurs passionnés. Ensemble, nous formons une Meuch soudée, travaillant ardemment pour propager la Meuchitude et atteindre nos objectifs communs. Rejoignez-nous dans notre aventure Meuchesque!"
+  },
+  "Quiz": {
+    "title": "Le Meuch Quiz",
+    "next": "Question suivante"
+  },
+  "Game" : [
+    {
+       "id":1,
+       "question":"Quelle serait la température de la Terre sans atmosphère ?",
+       "answers":[
+          "+15°C",
+          "0 °C",
+          "-50°C",
+          "-18°C"
+       ],
+       "correctAnswerIndex":3,
+       "information":"Heureusement, le phénomène naturel de l’effet de serre conserve dans l’atmosphère une partie de la chaleur du soleil !"
+    },
+    {
+       "id":2,
+       "question":"Quel gaz a l'effet de serre le plus puissant ?",
+       "answers":[
+          "CO2",
+          "Vapeur d'eau",
+          "Méthane",
+          "Argon"
+       ],
+       "correctAnswerIndex":1,
+       "information":"La vapeur d’eau contribue pour 60 % à l’effet de serre. Les émissions de ce gaz par l’humanité à travers l’industrie n’ont cependant qu’un effet limité car la durée de vie de la vapeur d’eau est courte."
+    },
+    {
+       "id":3,
+       "question":"En hiver et à quantité égale, lequel de ces aliments émet le plus de CO2 ?",
+       "answers":[
+          "Banane de Martinique",
+          "Tomates d'Espagne",
+          "Le rutabaga picard",
+          "Le café colombien"
+       ],
+       "correctAnswerIndex":1,
+       "information":"À quantité égale, produire une tomate en hiver génère aujourd'hui plus de C02 que le transport des autres aliments..."
+    },
+    {
+       "id":4,
+       "question":"Quel pays a le plus d'émissions de gaz à effet de serre par habitant ?",
+       "answers":[
+          "Les États-Unis",
+          "L'Australie",
+          "La Norvège",
+          "Le Japon"
+       ],
+       "correctAnswerIndex":1,
+       "information":"Etonnant !"
+    },
+    {
+       "id":5,
+       "question":"La production d'énergie est notre source principale d'émissions de CO2. Quelle est la seconde ?",
+       "answers":[
+          "La déforestation",
+          "L'activité volcanique",
+          "les flatulences de vaches",
+          "Le Burning Man"
+       ],
+       "correctAnswerIndex":0,
+       "information":"Il s'agit de la déforestation, qui représente aujourd'hui environ 15% de nos émissions."
+    },
+    {
+       "id":6,
+       "question":"En matière de transport, quelle action aurait le plus d’impact ?",
+       "answers":[
+          "Lancer un grand plan pour favoriser les vélos taxis",
+          "Améliorer l’efficience des avions",
+          "Construire un réseau global de trains à grande vitesse",
+          "Développer le télétravail"
+       ],
+       "correctAnswerIndex":1,
+       "information":"Le transport aérien reste l'une des sources majeures d'augmentation de notre empreinte carbone, selon le projet"
+    },
+    {
+       "id":7,
+       "question":"Si toute l’énergie que je consommais était d’origine humaine, combien me faudrait-il d’humains à mon service ?",
+       "answers":[
+          "2",
+          "20",
+          "200",
+          "2000"
+       ],
+       "correctAnswerIndex":2,
+       "information":"C'est l'argument repris par de nombreux adeptes de la décroissance !"
+    },
+    {
+       "id":8,
+       "question":"En matière d’alimentation, quelle solution est la plus efficace ?",
+       "answers":[
+          "Manger moins de viande",
+          "Installer des foyers de cuisson « propres » dans les pays en développement",
+          "Mettre en place une culture du riz plus efficiente et durable",
+          "Arrêtez le thon rouge"
+       ],
+       "correctAnswerIndex":0,
+       "information":"Manger moins de viande serait la solution la plus efficace selon les scientifiques du projet"
+    },
+    {
+       "id":9,
+       "question":"Quelle action diminuerait le plus nos émissions de gaz à effet de serre ?",
+       "answers":[
+          "Faire pousser nos légumes",
+          "Arrêter la déforestation",
+          "Retirer les véhicules à essence",
+          "Fermer les centrales à énergie carbonée"
+       ],
+       "correctAnswerIndex":3,
+       "information":"Informations : À prendre à l'échelle mondiale (évidemment 😀)"
+    },
+    {
+       "id":10,
+       "question":"Quelle action me permettrait de diminuer le plus mon empreinte carbone ?",
+       "answers":[
+          "Baisser de 1°C la consigne de chauffage",
+          "Reporter d’un an l’achat d’un nouveau smartphone",
+          "Consommer un repas par semaine sans viande",
+          "Eteindre les lumières en quittant une pièce"
+       ],
+       "correctAnswerIndex":0,
+       "information":"Mais sens toi libre de suivre les autres suggestions, ça ne peut pas faire de mal..."
+    },
+    {
+        "id": 11,
+        "question": "Les géologues débattent sur l’apparition d’une nouvelle ère géologique marquée par l’influence de l’Homme sur la planète, en particulier à travers l’utilisation des énergies fossiles. Elle se nomme :",
+        "answers": [
+          "Carbonocène",
+          "Industriacène",
+          "Anthropocène",
+          "Mésoprotérozoïque"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "Intéressant!"
+      },
+      {
+        "id": 12,
+        "question": "Au rythme de consommation actuel au niveau mondial, 3 milliards de baril de pétrole sont consommés en :",
+        "answers": [
+          "Un jour",
+          "Une semaine",
+          "Un mois",
+          "Un an"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "C'est beaucoup non?"
+      },
+      {
+        "id": 13,
+        "question": "Combien l'américain moyen rejette de CO2 dans l'atmosphère par an ?",
+        "answers": [
+          "Une demi tonne",
+          "2 tonnes",
+          "20 tonnes",
+          "Une méga tonne"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "A titre de comparaison en moyenne, un Francais émet environ 6,9 tonnes de CO2 dans l'atmosphère par an"
+      },
+      {
+        "id": 14,
+        "question": "Dans ses prévisions de réchauffement, le GIEC a du mal à estimer les effets d’un phénomène par manque de connaissances scientifiques. Il s’agit :",
+        "answers": [
+          "De l’accroissement mondial de population",
+          "Des éruptions solaires",
+          "De la fonte du permafrost",
+          "De la prochaine coupe de Donald Trump"
+        ],
+        "correctAnswerIndex": 2,
+        "information": "Il est beaucoup plus simple d'estimer l'esthétique de la prochaine coupe de Donald"
+      },
+      {
+        "id": 15,
+        "question": "Le pire scénario du GIEC prévoit d’ici 2100 une augmentation de :",
+        "answers": [
+          "2°C",
+          "5°C",
+          "8°C",
+          "12°C"
+        ],
+        "correctAnswerIndex": 3,
+        "information": "La Terre serait difficilement vivable...mais ça reste le pire scénario dans lequel nous nous accordons à vraiment faire n'importe quoi !"
+      },
+      {
+        "id": 16,
+        "question": "Où auront lieu les premiers impacts majeurs du changement climatique ?",
+        "answers": [
+          "Sur les tropiques",
+          "Sur les latitudes nord",
+          "Sur l'équateur",
+          "La distribution est égale"
+        ],
+        "correctAnswerIndex": 1,
+        "information": "Les modèles du GIEC s’accordent à montrer que les augmentations moyennes de T° vont être nettement plus importantes dans les hautes latitudes de l’hémisphère Nord."
+      }
+ ]
 }
 

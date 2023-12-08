@@ -9,11 +9,11 @@ const teamMembers = [
 ];
 
 const About = () => {
-  const trad = useTranslations("Index");
+  const trad = useTranslations("About");
 
   return (
     <div className="text-center mt-8">
-      <h1 className="text-4xl font-bold mb-4">À propos de nous</h1>
+      <h1 className="text-4xl font-bold mb-4">{trad("title")}</h1>
       <div className="flex justify-around items-center mb-8">
         {teamMembers.map((member) => (
           <div key={member.id} className="text-center">
@@ -26,12 +26,7 @@ const About = () => {
           </div>
         ))}
       </div>
-      <p className="text-2xl mb-8">
-        Bienvenue dans la Meuch! Nous sommes une équipe dynamique de Meucheurs
-        passionnés. Ensemble, nous formons une Meuch soudée, travaillant
-        ardemment pour propager la Meuchitude et atteindre nos objectifs
-        communs. Rejoignez-nous dans notre aventure Meuchesque!
-      </p>
+      <p className="text-2xl mb-8">{trad("text")}</p>
     </div>
   );
 };
