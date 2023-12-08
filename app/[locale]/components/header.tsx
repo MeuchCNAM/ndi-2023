@@ -18,7 +18,7 @@ export default function Header() {
             <Link href={`/${language}/`}>Accueil</Link>
           </li>
           <li>
-            <Link href={`/${language}/quizz`}>Quizz</Link>
+            <Link href={`/${language}/quiz`}>Quiz</Link>
           </li>
           <li>
             <Link href={`/${language}/about`}>À propos</Link>
