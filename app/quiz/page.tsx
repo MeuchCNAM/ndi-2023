@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Quizz() {
+export default function Quiz() {
   return (
     <main>
-      <h1>Quizz</h1>
+      <h1>Quiz</h1>
     </main>
   );
 }
