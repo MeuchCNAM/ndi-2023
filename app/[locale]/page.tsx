@@ -4,6 +4,8 @@ import React from "react";
 import { useTranslations } from "next-intl";
 
 export default function Home() {
+  const indexTrad = useTranslations("Index");
+  const language = indexTrad("language");
   const trad = useTranslations("Home");
 
   return (
@@ -18,7 +20,7 @@ export default function Home() {
         <p className="text-gray-500">{trad("text_2")}</p>
         <div className="text-center mt-5">
           <button className="btn btn-primary">
-            <Link href="quiz">{trad("button")}</Link>
+            <Link href={`/${language}/quiz`}>{trad("button")}</Link>
           </button>
         </div>
       </section>
