@@ -1,30 +1,37 @@
-import React, { useState, useEffect } from 'react';
-import LinearProgress from '@mui/material/LinearProgress';
+import React, { FC } from "react";
 
-interface Co2ProgressBarProps {
-  co2Value: number;
+interface ProgressBarProps {
+  value: number;
 }
 
-const Co2ProgressBar: React.FC<Co2ProgressBarProps> = ({ co2Value }) => {
-  const [progress, setProgress] = useState<number>(0);
+const ProgressBar: FC<ProgressBarProps> = ({ value = 0 }) => {
+  // Limit the number of decimal places to 2
+  const formattedValue = (value / 3 + 19).toFixed(2);
 
-  useEffect(() => {
-    // Assuming co2Value is between 0 and 100 (adjust the range as needed)
-    const normalizedValue = Math.min(Math.max(co2Value, 0), 100);
-    setProgress(normalizedValue);
-  }, [co2Value]);
+  const getProgressColor = (value: number) => {
+    if (value < 33) {
+      return "success";
+    }
+
+    if (value < 66) {
+      return "warning";
+    }
+
+    return "error";
+  };
 
   return (
-    <div className="text-center">
-      <h1 className="font-bold text-xl mb-2">Taux de CO2</h1>
-      <LinearProgress
-        className="h-10 rounded-lg"
-        variant="determinate"
-        value={progress}
-        color="secondary" // Use the 'secondary' color as the filling color
-      />
-    </div>
+    <>
+      <progress
+        className={`progress progress-${getProgressColor(value)} w-56`}
+        value={value}
+        max="100"
+      ></progress>
+      <span className="mt-1 mb-5 text-gray-500 text-sm">
+        {formattedValue}°C
+      </span>
+    </>
   );
 };
 
-export default Co2ProgressBar;
+export default ProgressBar;

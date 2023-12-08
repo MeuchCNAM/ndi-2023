@@ -1,6 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
+import questions from "../../../public/quizData.json";
+import ProgressBar from "@/app/components/progressbar";
 
 export const QuizPane: React.FC<{
   questions: {
@@ -15,11 +17,16 @@ export const QuizPane: React.FC<{
   const [isQuestionAnswered, setIsQuestionAnswered] = useState(false);
   const [questionNumber, setQuestionNumber] = useState(0);
   const [choice, setChoice] = useState(-1);
+  const [progress, setProgress] = useState(0);
+  const firstAnswerRef = useRef<HTMLButtonElement>(null);
+  const nextQuestionRef = useRef<HTMLButtonElement>(null);
+
 
   const nextQuestion = () => {
     setIsQuestionAnswered(false);
     setChoice(-1);
     setQuestionNumber((questionNumber + 1) % questions.length);
+    firstAnswerRef.current?.focus();
   };
 
   const getAnswerClass = (index: number) => {
@@ -43,34 +50,39 @@ export const QuizPane: React.FC<{
       return;
     }
 
+    if (!(choice === questions[questionNumber]?.correctAnswerIndex)) {
+      setProgress(progress + 15);
+    }
+
     setIsQuestionAnswered(true);
     setChoice(choice);
+    setTimeout(() => {
+      nextQuestionRef.current?.focus();
+    }, 100);
   };
 
   return (
-    <main className="flex flex-col items-center mt-20">
-      <h1 className="text-4xl font-bold text-center mb-12">{title}</h1>
+    <main className="flex flex-col items-center mt-20 min-h-[65vh]">
+      <h1 className="text-4xl font-bold text-center mb-5">{title}</h1>
+      <ProgressBar value={progress} />
+      
       <section
         className={`bg-white border border-gray-300 shadow-md rounded-xl w-2/3 collapse ${
           isQuestionAnswered && "collapse-open"
         }`}
       >
         <div className="collapse-title text-xl font-medium p-8">
-          <h2 className="text-2xl font-bold text-center mb-6">
-            {questions[questionNumber].question}
-          </h2>
-          <div className="grid grid-cols-2 gap-4 gap-x-4">
-            {questions[questionNumber]?.answers.map(
-              (option: string, index: number) => (
-                <button
-                  key={index}
-                  className={`btn btn-primary ${getAnswerClass(index)}`}
-                  onClick={handleChoice.bind(null, index)}
-                >
-                  {option}
-                </button>
-              )
-            )}
+          <h2 className="text-2xl font-bold text-center mb-6">{questions[questionNumber]?.question}</h2>
+          <div className="answers grid grid-cols-2 gap-4 gap-x-4">
+            {questions[questionNumber]?.answers.map((option: string, index: number) => (
+              <button
+                key={index}
+                className={`btn btn-primary ${getAnswerClass(index)}`}
+                onClick={handleChoice.bind(null, index)}
+                ref={index === 0 ? firstAnswerRef : null}>
+                {option}
+              </button>
+            ))}
           </div>
         </div>
         <div className="collapse-content text-center p-0">
@@ -94,14 +106,10 @@ export const QuizPane: React.FC<{
             <p className="text-sm text-gray-700">
               {questions[questionNumber].information}
             </p>
-            <button className="btn btn-sm btn-primary" onClick={nextQuestion}>
-              {next}
-            </button>
+            <button className="btn btn-sm btn-primary" onClick={nextQuestion} ref={nextQuestionRef}>Question suivante</button>
           </div>
         </div>
       </section>
     </main>
   );
 };
-
-export default QuizPane;
