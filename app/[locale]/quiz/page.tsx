@@ -17,33 +17,27 @@ export default function Quiz() {
   switch (language) {
     case "de":
       return (
-        <main>
-          <QuizPane
-            questions={questionsDE}
-            title={quizTrad("title")}
-            next={quizTrad("next")}
-          />
-        </main>
+        <QuizPane
+          questions={questionsDE}
+          title={quizTrad("title")}
+          next={quizTrad("next")}
+        />
       );
     case "en":
       return (
-        <main>
-          <QuizPane
-            questions={questionsEN}
-            title={quizTrad("title")}
-            next={quizTrad("next")}
-          />
-        </main>
+        <QuizPane
+          questions={questionsEN}
+          title={quizTrad("title")}
+          next={quizTrad("next")}
+        />
       );
     case "fr":
       return (
-        <main>
-          <QuizPane
-            questions={questionsFR}
-            title={quizTrad("title")}
-            next={quizTrad("next")}
-          />
-        </main>
+        <QuizPane
+          questions={questionsFR}
+          title={quizTrad("title")}
+          next={quizTrad("next")}
+        />
       );
   }
 }
