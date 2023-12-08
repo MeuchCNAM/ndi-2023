@@ -2,6 +2,24 @@
   "Index": {
     "title": "Hallo Welt",
     "language": "de"
+  },
+  "Navbar": {
+    "home": "Startseite",
+    "quiz": "Quiz",
+    "about": "Über uns",
+    "language": "Sprache"
+  },
+  "Home": {
+    "quiz": "Das Meuch Quiz",
+    "title_1": "Erklärung",
+    "title_2": "Ablauf",
+    "text_1": "Willkommen zu unserem Klima-Quiz! Ziel dieses Quiz ist es, Ihr Wissen über den Klimawandel und seine Lösungen zu testen und gleichzeitig einige gängige Missverständnisse zu entmystifizieren. Wir möchten Ihnen helfen, zwischen falschen Informationen und echten Lösungen für das Klima zu unterscheiden. Bereiten Sie sich darauf vor, mit informativen und einnehmenden Fragen in die Welt des Klimas einzutauchen. Jede Frage wird einen bestimmten Aspekt des Klimawandels behandeln, von Treibhausgasemissionen bis hin zu nachhaltigen Lösungen.",
+    "text_2": "Ihnen werden nacheinander mehrere Fragen gestellt. Sie müssen sie beantworten, indem Sie die Antwort wählen, die Ihnen am geeignetsten erscheint. Am Ende des Quiz können Sie Ihre Ergebnisse sehen. Bitte beachten Sie! Ihre Entscheidungen haben Konsequenzen und werden die Gesundheit Ihres Planeten positiv oder negativ beeinflussen.",
+    "button": "Testen Sie sich selbst"
+  },
+  "About": {
+    "title": "Über uns",
+    "text": "Willkommen in der Meuch! Wir sind ein dynamisches Team von leidenschaftlichen Meuchlern. Zusammen sind wir ein eingeschworener Meuch, der eifrig daran arbeitet, das Meucheln zu verbreiten und unsere gemeinsamen Ziele zu erreichen. Begleiten Sie uns auf unserem Meucheln-Abenteuer!"
   }
 }
 

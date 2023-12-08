@@ -2,6 +2,24 @@
   "Index": {
     "title": "Hello world!",
     "language": "en"
+  },
+  "Navbar": {
+    "home": "Home",
+    "quiz": "Quiz",
+    "about": "About",
+    "language": "Language"
+  },
+  "Home": {
+    "quiz": "The Meuch Quiz",
+    "title_1": "Explanation",
+    "title_2": "Course",
+    "text_1": "Welcome to our Climate Quiz! The aim of this quiz is to test your knowledge of climate change and its solutions, while demystifying certain preconceived ideas. We want to help you distinguish between false information and real climate solutions. Get ready to plunge into the world of climate with instructive and engaging questions. Each question will address a specific aspect of climate change, from greenhouse gas emissions to sustainable solutions.",
+    "text_2": "You'll be asked a series of questions. You'll have to answer them by choosing the answer that seems most appropriate to you. At the end of the quiz, you'll be able to see your results. But be careful! Your choices have consequences and will have a positive or negative impact on the health of your planet.",
+    "button": "Test yourself"
+  },
+  "About" : {
+    "title": "About us",
+    "text": "Welcome to The Meuch! We're a dynamic team of passionate Meuchers. Together, we form a tight-knit Meuch, working hard to spread Meuchitude and achieve our common goals. Join us in our Meuch adventure!"
   }
 }
 

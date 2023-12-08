@@ -2,6 +2,24 @@
   "Index": {
     "title": "Bonjour tout le monde !",
     "language": "fr"
+  },
+  "Navbar": {
+    "home": "Accueil",
+    "quiz": "Quiz",
+    "about": "À propos",
+    "language": "Langue"
+  },
+  "Home": {
+    "quiz": "Le Meuch Quiz",
+    "title_1": "Explication",
+    "title_2": "Déroulement",
+    "text_1": "Bienvenue dans notre Quiz sur le Climat ! L'objectif de ce quiz est de tester vos connaissances sur le changement climatique et ses solutions, tout en démystifiant certaines idées reçues. Nous voulons vous aider à distinguer entre les fausses informations et les vraies solutions pour le climat. Préparez-vous à plonger dans le monde du climat avec des questions instructives et engageantes. Chaque question abordera un aspect spécifique du changement climatique, des émissions de gaz à effet de serre aux solutions durables.",
+    "text_2": "Plusieurs questions vous seront posées, successivement. Vous devrez y répondre en choisissant la réponse qui vous semble la plus appropriée. À la fin du quiz, vous pourrez voir vos résultats. Attention ! Vos choix ont des conséquences et influenceront positivement ou négativement la santé de votre planète.",
+    "button": "Testez-vous"
+  },
+  "About": {
+    "title": "À propos de nous",
+    "text": "Bienvenue dans la Meuch! Nous sommes une équipe dynamique de Meucheurs passionnés. Ensemble, nous formons une Meuch soudée, travaillant ardemment pour propager la Meuchitude et atteindre nos objectifs communs. Rejoignez-nous dans notre aventure Meuchesque!"
   }
 }
 
